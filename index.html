@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/9f5966c5ff.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <nav>
+        <h1>Tic Tac Toe </h1>
+    </nav>
+
+    <div class="playWith">
+        <button id="friend">Play With Friend </button>
+        <button id="computer">Play With Computer</button>
+    </div>
+
+    <main>
+        <div class="selectPlayer">
+            <p>Select your player...</p>
+            <div class="playersBtnDiv">
+                <button id="playerX" class="playersBtn">Player X</button>
+                <button id="playerO" class="playersBtn">Player O</button>
+            </div>
+        </div>
+
+        <div class="playArea">
+
+            <div class="turn">
+                <div class="turnBtn" id="turnO"><i class="far fa-circle"></i> 's turn</div>
+                <div class="turnBtn" id="turnX"><i class="fas fa-times"></i> 's turn</div>
+            </div>
+
+            <table  cellspacing="5" cellpadding="5">
+
+                <tbody>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            
+
+        </div>
+
+        <div class="result">
+            <h2></h2>
+            <button id="replayBtn">Replay <i class="fas fa-redo"></i></button>
+        </div>
+    </main> 
+
+
+    <script src="node.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,254 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    transition: all 0.3s ease 0s;
+}
+
+nav{
+    display: flex;
+    padding: 15px;
+    padding-left: 20px;
+    background-color: #2b353d;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    font-family: 'poppins' , 'sans-serif';
+    font-size: 22px;
+    letter-spacing: 2px;
+}
+
+.playWith{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    background-color: white;
+}
+.playWith button{
+    border: none;
+	background: #466e8d;
+	color: #ffffff !important;
+	font-weight: 100;
+	padding: 15px;
+    letter-spacing: 1px;
+    cursor: pointer;
+	text-transform: uppercase;
+	border-radius: 6px;
+	display: inline-block;
+    margin: 0 20px;
+}
+.playWith button:hover{
+    color: #404040 !important;
+	font-weight: 700 !important;
+	letter-spacing: 3px;
+	background: none;
+	box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+}
+main{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    border: 1px solid aliceblue;
+    border-radius: 5px;
+    width: 550px;
+    padding: 10px;
+    height: 200px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #2166d4;
+    background-image: linear-gradient(315deg, #045ce9 0%, #09c6f9 74%);
+    opacity: 0;
+}
+hr{
+    background-color: rgb(77, 175, 240);
+}
+main .selectPlayer{
+    border-radius: 5px;
+    width: 430px;
+    height: auto;  
+    margin: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: aliceblue;
+    opacity: 1;
+    font-family: 'poppins' , 'sans-serif';
+    transition-duration: 0.3s;
+    position: absolute;
+    top: 5%;
+    left: 5%;
+}
+
+main .selectPlayer p{
+    text-align: center;
+    font-size: 18px;
+    margin-top: 9px;
+    margin-bottom: 3px;
+}
+main .selectPlayer .playersBtnDiv .playersBtn{
+    padding: 8px 20px;
+    width: 290px;
+    border: 1px solid white;
+    border-radius: 5px;
+    color: white;  
+    margin: 13px 0px;
+    cursor: pointer;
+    display: block;
+    font-size: 15px;
+}
+main .selectPlayer .playersBtnDiv #playerX{
+    background-color: rgb(69, 120, 179);
+}
+main .selectPlayer .playersBtnDiv #playerO{
+    background-color: rgb(223, 135, 135);
+}
+main .selectPlayer .playersBtnDiv #playerX:hover{
+    background-color: transparent;
+    color: rgb(69, 120, 179);
+    transform: scale(1.1);
+    border-color: rgb(69, 120, 179);
+}
+main .selectPlayer .playersBtnDiv #playerO:hover{
+    background-color: transparent;
+    color: rgb(223, 135, 135);
+    transform: scale(1.1);
+    border-color: rgb(223, 135, 135);
+}
+main .selectPlayer .playersBtnDiv{
+    width: 290px;
+    margin: auto;
+}
+
+main .playArea{
+    border-radius: 5px;
+    width: 480px;
+    height: 280px;  
+    margin: 20px;
+    background-color: aliceblue;
+    position: absolute;
+    top:4%;
+    left: 5;
+    opacity: 0;
+    pointer-events: none;
+}
+main .playArea .turn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid rgb(77, 175, 240);
+    background-color: rgb(77, 175, 240);
+    height: 50px;
+    margin: 10px auto;
+    width: 270px;
+    border-radius: 4px;
+
+}
+main .playArea .turn .turnBtn{
+    padding: 7px;
+    height: 43px;
+    border-radius: 4px;
+    width: 140px;
+    border: 3px solid transparent;
+    text-align: center;
+}
+main .playArea table{
+    height: 190px;
+    width: 280px;
+    border-color: aliceblue;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin: 20px auto;
+}
+main .playArea table td{
+    background-color: rgb(77, 175, 240);
+    border-color: aliceblue;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+    height: 30px;
+    width: 30px;
+    color: aliceblue;
+    font-size: 20px;
+}
+
+i{
+    font-size: 25px;
+}
+.fa-circle{
+    color: rgb(101, 228, 207);
+}
+
+main .result{
+    border-radius: 5px;
+    width: 480px;
+    border-color: aliceblue;
+    height: 130px;  
+    margin: 20px;
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+    top: 65%;
+    left: 2%;
+}
+main .result #replayBtn{
+    padding: 8px 20px;
+    width: 290px;
+    border: 1px solid white;
+    border-radius: 5px;
+    color: white;  
+    margin: 13px 0px;
+    cursor: pointer;
+    background-color: lightgreen;
+    font-size: 17px;
+}
+main .result #replayBtn i{
+    font-size: 16px;
+    margin-left: 6px;
+}
+
+
+@media only screen and (max-width: 600px){
+    main{
+        width: 90%;
+    }
+    main .selectPlayer{
+        width: 90%;
+        left: 1%;
+    }
+    main .playArea{
+        width: 90%;
+    }
+    main .result{
+        width: 90%;
+        left: 0%;
+    }
+    main .result #replayBtn{
+        width: 280px;
+    }
+    main .playArea table{
+        width: 280px;
+ 
+    }
+    main .playArea table td{
+        margin: 10px;
+    }
+    main .playArea .turn{ 
+        width: 280px;
+    } 
+    main .playArea .turn .turnBtn{
+        margin: auto;
+        font-size: 17px;
+    }
+}
