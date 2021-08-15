@@ -228,6 +228,7 @@ main .result #replayBtn i{
     }
     main .result{
         width: 95%;
+	height: 110px;
     }
     main .result #replayBtn{
         width: 280px;
