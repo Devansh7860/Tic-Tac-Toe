@@ -376,7 +376,7 @@ let displayResult = () => {
     result.style.pointerEvents = "all"
     playArea.style.opacity = "1"
     playArea.style.pointerEvents = "none"
-    main.style.height = "500px"
+    main.style.height = "480px"
     main.style.top = "48%"
     let h2 = result.getElementsByTagName('h2')[0]
     if (winner != ''){
