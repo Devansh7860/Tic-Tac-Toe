@@ -78,6 +78,7 @@ main .selectPlayer{
     transition-duration: 0.3s;
     position: absolute;
     top: 0%;
+    left:-1%;
 }
 
 main .selectPlayer p{
@@ -181,7 +182,7 @@ main .result{
     width: 520px;
     border-color: aliceblue;
     height: 130px;  
-    margin: 28px auto;
+    margin: 29px auto;
     background-color: aliceblue;
     display: flex;
     flex-direction: column;
@@ -190,7 +191,7 @@ main .result{
     position: absolute;
     opacity: 0;
     pointer-events: none;
-    top: 65%;
+    top: 67%;
 }
 main .result #replayBtn{
     padding: 8px 20px;
