@@ -188,16 +188,13 @@ let insertX2 = (event) => {
         turnX.style.backgroundColor = "white"
         turnO.style.backgroundColor = "transparent"
         
-        let randomNumGenerator = () => {
-            randomnumber = Math.floor(Math.random() * (tdArr.length - 1)) + 1;
-            if (randomArr.indexOf(randomnumber) == -1 && eventInd.indexOf(randomnumber) == -1 && (randomArr.length + eventInd.length) <= tdArr.length){
-                randomArr.push(randomnumber)
-            }
-            else{
-                randomNumGenerator()
+        let arr = []
+        for (i = 0; i < tdArr.length; i++){
+            if(tdArr[i].childElementCount == 0){
+                arr.push(tdArr[i])
             }
         }
-        randomNumGenerator()
+            randomnumber = Math.floor(Math.random() * arr.length) ;
             
         if(computerPlayer == "Player X" && userPlayer == "Player O"){
                 
@@ -206,8 +203,8 @@ let insertX2 = (event) => {
                 turnX.style.backgroundColor = "transparent"
                 turnO.style.backgroundColor = "white"
 
-                tdArr[randomnumber].innerHTML = '<i class="fas fa-times"></i>'
-                tdArr[randomnumber].replaceWith(tdArr[randomnumber].cloneNode(true));
+                arr[randomnumber].innerHTML = '<i class="fas fa-times"></i>'
+                arr[randomnumber].replaceWith(arr[randomnumber].cloneNode(true));
                 checkWinner()
 
                 for (elem of tdArr){
@@ -223,8 +220,8 @@ let insertX2 = (event) => {
                 turnX.style.backgroundColor = "white"
                 turnO.style.backgroundColor = "transparent"
 
-                tdArr[randomnumber].innerHTML = '<i class="far fa-circle"></i>'
-                tdArr[randomnumber].replaceWith(tdArr[randomnumber].cloneNode(true));
+                arr[randomnumber].innerHTML = '<i class="far fa-circle"></i>'
+                arr[randomnumber].replaceWith(arr[randomnumber].cloneNode(true));
                 checkWinner()
 
                 for (elem of tdArr){
